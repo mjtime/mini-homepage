@@ -1,0 +1,21 @@
+.contentList{
+    height: 520px;
+    overflow: auto;
+}
+.contentTitle{
+    font-family: 'DungGeunMo';
+    font-size: 15px;
+    padding: 10px 20px 10px;
+    background-color: rgb(231, 231, 231);
+}
+.contentTitle > span{
+    font-size: 13px;
+}
+.item > .content{
+    font-family: 'Pretendard-Regular';
+    padding: 10px 20px 50px;
+}
+.item > img{
+    width: 100%;
+    margin-bottom: 5px;
+}

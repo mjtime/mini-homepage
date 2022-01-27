@@ -1,0 +1,43 @@
+.contentList{
+    height: 520px;
+    overflow: auto;
+}
+.contentTitle{
+    font-family: 'DungGeunMo';
+    font-size: 15px;
+    padding: 10px 20px 10px;
+    background-color: rgb(231, 231, 231);
+}
+.contentTitle > span{
+    color:blue;
+}
+
+.item{
+    margin: 25px 0px 60px;
+    display:flex
+}
+.item > img{
+    flex:0.5;
+    width: 30%;
+    
+}
+.item > .content{
+    font-family: 'Pretendard-Regular';
+    padding: 0px 15px;
+    flex:3;
+    display: flex;
+    align-items: center;
+}
+
+.item >img {
+    background-size: cover;
+}
+.item1 >img {
+    background-image: url("./images/배경1.png");
+}
+.item2 >img {
+    background-image: url("./images/배경2.png");
+}
+.item3 >img {
+    background-image: url("./images/배경3.png");
+}

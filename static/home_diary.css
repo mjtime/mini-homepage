@@ -1,0 +1,71 @@
+.datelist{
+    font-family: 'DungGeunMo';
+    display: flex;
+    margin: 0px 5px 0px;
+    padding: 5px 5px;
+    border: 1px solid rgb(238, 238, 238);
+}
+.today{
+    flex:0.5;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(63, 133, 172);
+}
+.daylist{
+    flex:3;
+    flex-wrap: wrap;
+    color: rgb(142, 130, 128);
+}
+.daylist > .holiday, .daylist > .sun{
+    color: red;
+}
+.daylist > .sat{
+    color: blue;
+}
+
+.contentList{
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 480px;
+    padding: 0px 5px 0px;
+    overflow: auto;
+}
+.item{
+    margin: 10px 0px 20px;
+    padding: 20px;
+    border: 1px solid rgb(238, 238, 238);
+}
+.contentDate{
+    font-family: 'DungGeunMo';
+    font-size: 13px;
+    color: rgb(63, 133, 172);
+}
+.content{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Pretendard-Regular';
+}
+
+.contentList > .btn{
+
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color:white;
+    background-color: white;
+    border: none;
+    display: block;
+}
+.contentList > .btn:hover{
+    background-color: rgb(97, 125, 193);
+}
+
+.btn> .icon{
+    color: white;
+    padding: 0px 5px 5px 0px;
+}
+
+#secret-box{
+    display:none;
+}

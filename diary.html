@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>2022 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./static/font.css" />
+    <link rel="stylesheet" href="./static/layout.css" />
+    <link rel="stylesheet" href="./static/home_diary.css" />
+    <script src="https://kit.fontawesome.com/3ca6b3ca12.js" crossorigin="anonymous"></script>
+</head>
+    <div class="bookcover">
+        <div class="bookdot">
+            <div class="page">
+                <div class="leftPage">
+                    <div class="topPage statistics">TODAY <span>20</span> | TOTAL 10218</div>
+                    <div class="mainpage profilePage">
+                        <div class=imgProfile>
+                            <img src="./static/images/profile2.png" width="200" height="200">
+                        </div>
+                        <div class="txtProfile">
+                            "코딩 그만해."<br>
+                            "그게 뭔데."<br>
+                            "코딩 그만하라고."<br>
+                            "그거 어떻게 하는건데."<br><br><br>
+                            <span>-코딩의 유혹中-</span>
+                        </div>
+                        <div class="txtCodemate">@winsome</div>
+                        <select onchange="if(this.value) location.href=(this.value);">
+                            <option value="" selected hidden>파도타기</option>
+                            <option value="https://codemate.kr/@winsome">code mate</option>
+                            <option value="https://cafe.naver.com/codeuniv">코뮤니티</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="centerPage">
+                    <div class="topPage information">
+                        <div class="homepageName">난 ㄱr끔 글을 쓴ㄷr..★</div>
+                        <div class="homepageUrl">http://mjtime.github.io/mini-homepage</div>
+                    </div>
+                    <div class="mainpage contentPage">
+                        <div class="datelist">
+                            <div class="today">01.25 TUE</div>
+                            <div class="daylist">
+                                &nbsp;<span class="holiday">1</span>&nbsp;&nbsp;<span class="sun">2</span>&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;
+                                5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;<span class="sat">8</span>&nbsp;&nbsp;<span class="sun">9</span>
+                                10 11 12 13 14 <span class="sat">15</span> <span class="sun">16</span> 17 18 19 20
+                                21 <span class="sat">22</span> <span class="sun">23</span> 24 25 26 27 28 <span class="sat">29</span> 
+                                <span class="sun">30</span> 31
+                            </div>
+                        </div>
+                        <div class="contentList">
+                            <div class="item">
+                                <div class="contentDate">
+                                    2022. 01. 25 화 18:35
+                                </div>
+                                <div class="content">
+                                    오늘은 html에서 오타난 부분 때문에 헤맸다<br>
+                                    왜 안되나했는데..<br>
+                                    에러의 이유가 오타인 것을 알고나면<br>
+                                    어이없으면서도 다행이라는 생각이든다<br>
+                                    할 수록 이전 코드들도 코쳐야할 부분들이 보인다 ㅠㅠ<br>
+                                    언젠간 나도 깔끔한 코드를 짤 수 있겠지..?<br><br>
+                                    고수가 되는 날을 향하여 화이팅~!<br>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="contentDate">
+                                    2022. 01. 17 월 23:11
+                                </div>
+                                <div class="content">
+                                    난.. ㄱ ㅏ 끔...<br>
+                                    눈물을 흘린ㄷ ㅏ...<br>
+                                    ㄱ ㅏ끔은 눈물을 참을 수 없는 ㄴ ㅐ가 별루ㄷ ㅏ...<br>
+                                    맘이 ㅇ ㅏㅍ ㅏ서...<br>
+                                    소ㄹ ㅣ치며...울 수 있 ㄷ ㅏ는건...<br>
+                                    좋은 ㄱ ㅓㅇㅑ...<br>
+                                    ㅁ ㅓ...꼭 슬 ㅍ ㅓㅇ ㅑ만 우는 건 ㅇ ㅏ니잖 ㅇ ㅏ...^^<br>
+                                    난... 눈물ㅇ ㅣ...좋 다...<br>
+                                    ㅇ ㅏ니...<br>
+                                    ㅁ ㅓ 리가 ㅇ ㅏ닌...<br>
+                                    맘으로...우는 ㄴ ㅐ ㄱ ㅏ 좋ㄷ ㅏ...<br>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="contentDate">
+                                    2022. 01. 01 토 00:30
+                                </div>
+                                <div class="content">
+                                    난 ㅈㅣ금 ㅁㅣ쳐가고있ㄷr<br><br>
+                                    음악만이 ㄴrㄹㅏ에서 ㅎㅓ락ㅎr는<br>
+                                    유일한 ㅁㅏ약이니ㄲㅏ..☆<br>
+                                </div>
+                            </div>
+                            
+                            <button class="btn" onclick="getTextFile()">
+                                <i class="fas fa-lock icon" style="user-select: auto;"></i>비밀일기 보기
+                            </button>
+                            <div class="item" id="secret-box">
+                                <div class="contentDate">비밀스런 비밀일기</div>
+                                <div class="content" id="secret-diary"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightBar">
+                    <button class="btn"><a href="./home.html">홈</a></button>
+                    <button class="btn"><a href="./diary.html">다이어리</a></button>
+                    <button class="btn"><a href="./album.html">사진첩</a></button>
+                    <button class="btn"><a href="./visitorsBook.html">방명록</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getTextFile(){
+            var input = document.createElement("input");
+            input.type="file";
+            input.accept="text/plain";
+            input.onchange=function(event){
+                processFile(event.target.files[0]);
+            };
+            input.click();
+        }
+        function processFile(file){
+            var reader=new FileReader();
+            reader.readAsText(file, "utf-8");
+
+            reader.onload = function(){
+                document.getElementById("secret-diary").innerText=reader.result;
+                document.getElementById("secret-box").style.display="block";
+            };
+        }
+    </script>
+</body>
+
+</html>
